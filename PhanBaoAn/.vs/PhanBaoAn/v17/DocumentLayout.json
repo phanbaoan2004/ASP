@@ -1,0 +1,181 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\asp\\PhanBaoAn\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8458B6BD-CD86-4BF3-8040-2CFEB7917C1F}|PhanBaoAn\\PhanBaoAn.csproj|d:\\asp\\phanbaoan\\phanbaoan\\views\\category\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8458B6BD-CD86-4BF3-8040-2CFEB7917C1F}|PhanBaoAn\\PhanBaoAn.csproj|solutionrelative:phanbaoan\\views\\category\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8458B6BD-CD86-4BF3-8040-2CFEB7917C1F}|PhanBaoAn\\PhanBaoAn.csproj|D:\\asp\\PhanBaoAn\\phanbaoan\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8458B6BD-CD86-4BF3-8040-2CFEB7917C1F}|PhanBaoAn\\PhanBaoAn.csproj|solutionrelative:phanbaoan\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8458B6BD-CD86-4BF3-8040-2CFEB7917C1F}|PhanBaoAn\\PhanBaoAn.csproj|D:\\asp\\PhanBaoAn\\phanbaoan\\views\\category\\productcategory.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8458B6BD-CD86-4BF3-8040-2CFEB7917C1F}|PhanBaoAn\\PhanBaoAn.csproj|solutionrelative:phanbaoan\\views\\category\\productcategory.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8458B6BD-CD86-4BF3-8040-2CFEB7917C1F}|PhanBaoAn\\PhanBaoAn.csproj|D:\\asp\\PhanBaoAn\\phanbaoan\\views\\cart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8458B6BD-CD86-4BF3-8040-2CFEB7917C1F}|PhanBaoAn\\PhanBaoAn.csproj|solutionrelative:phanbaoan\\views\\cart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8458B6BD-CD86-4BF3-8040-2CFEB7917C1F}|PhanBaoAn\\PhanBaoAn.csproj|D:\\asp\\PhanBaoAn\\phanbaoan\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8458B6BD-CD86-4BF3-8040-2CFEB7917C1F}|PhanBaoAn\\PhanBaoAn.csproj|solutionrelative:phanbaoan\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8458B6BD-CD86-4BF3-8040-2CFEB7917C1F}|PhanBaoAn\\PhanBaoAn.csproj|D:\\asp\\PhanBaoAn\\phanbaoan\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8458B6BD-CD86-4BF3-8040-2CFEB7917C1F}|PhanBaoAn\\PhanBaoAn.csproj|solutionrelative:phanbaoan\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8458B6BD-CD86-4BF3-8040-2CFEB7917C1F}|PhanBaoAn\\PhanBaoAn.csproj|D:\\asp\\PhanBaoAn\\phanbaoan\\views\\product\\detail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8458B6BD-CD86-4BF3-8040-2CFEB7917C1F}|PhanBaoAn\\PhanBaoAn.csproj|solutionrelative:phanbaoan\\views\\product\\detail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8458B6BD-CD86-4BF3-8040-2CFEB7917C1F}|PhanBaoAn\\PhanBaoAn.csproj|D:\\asp\\PhanBaoAn\\phanbaoan\\views\\user\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8458B6BD-CD86-4BF3-8040-2CFEB7917C1F}|PhanBaoAn\\PhanBaoAn.csproj|solutionrelative:phanbaoan\\views\\user\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8458B6BD-CD86-4BF3-8040-2CFEB7917C1F}|PhanBaoAn\\PhanBaoAn.csproj|D:\\asp\\PhanBaoAn\\phanbaoan\\views\\user\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8458B6BD-CD86-4BF3-8040-2CFEB7917C1F}|PhanBaoAn\\PhanBaoAn.csproj|solutionrelative:phanbaoan\\views\\user\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8458B6BD-CD86-4BF3-8040-2CFEB7917C1F}|PhanBaoAn\\PhanBaoAn.csproj|D:\\asp\\PhanBaoAn\\phanbaoan\\models\\cartmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8458B6BD-CD86-4BF3-8040-2CFEB7917C1F}|PhanBaoAn\\PhanBaoAn.csproj|solutionrelative:phanbaoan\\models\\cartmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\asp\\PhanBaoAn\\PhanBaoAn\\Views\\Category\\Index.cshtml",
+              "RelativeDocumentMoniker": "PhanBaoAn\\Views\\Category\\Index.cshtml",
+              "ToolTip": "D:\\asp\\PhanBaoAn\\PhanBaoAn\\Views\\Category\\Index.cshtml",
+              "RelativeToolTip": "PhanBaoAn\\Views\\Category\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-14T03:03:47.644Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\asp\\PhanBaoAn\\PhanBaoAn\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "PhanBaoAn\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\asp\\PhanBaoAn\\PhanBaoAn\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "PhanBaoAn\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAADcAAAAAAAAAAAAQwFYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-13T15:01:18.323Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\asp\\PhanBaoAn\\PhanBaoAn\\Views\\Cart\\Index.cshtml",
+              "RelativeDocumentMoniker": "PhanBaoAn\\Views\\Cart\\Index.cshtml",
+              "ToolTip": "D:\\asp\\PhanBaoAn\\PhanBaoAn\\Views\\Cart\\Index.cshtml",
+              "RelativeToolTip": "PhanBaoAn\\Views\\Cart\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADUAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-14T02:22:21.035Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "D:\\asp\\PhanBaoAn\\PhanBaoAn\\Views\\User\\Login.cshtml",
+              "RelativeDocumentMoniker": "PhanBaoAn\\Views\\User\\Login.cshtml",
+              "ToolTip": "D:\\asp\\PhanBaoAn\\PhanBaoAn\\Views\\User\\Login.cshtml",
+              "RelativeToolTip": "PhanBaoAn\\Views\\User\\Login.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAB9AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-14T01:30:17.017Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ProductCategory.cshtml",
+              "DocumentMoniker": "D:\\asp\\PhanBaoAn\\PhanBaoAn\\Views\\Category\\ProductCategory.cshtml",
+              "RelativeDocumentMoniker": "PhanBaoAn\\Views\\Category\\ProductCategory.cshtml",
+              "ToolTip": "D:\\asp\\PhanBaoAn\\PhanBaoAn\\Views\\Category\\ProductCategory.cshtml",
+              "RelativeToolTip": "PhanBaoAn\\Views\\Category\\ProductCategory.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAMoAAABQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-14T01:26:52.836Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CartController.cs",
+              "DocumentMoniker": "D:\\asp\\PhanBaoAn\\PhanBaoAn\\Controllers\\CartController.cs",
+              "RelativeDocumentMoniker": "PhanBaoAn\\Controllers\\CartController.cs",
+              "ToolTip": "D:\\asp\\PhanBaoAn\\PhanBaoAn\\Controllers\\CartController.cs",
+              "RelativeToolTip": "PhanBaoAn\\Controllers\\CartController.cs",
+              "ViewState": "AQIAACoAAAAAAAAAAAAYwEEAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-13T12:33:02.015Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "CartModel.cs",
+              "DocumentMoniker": "D:\\asp\\PhanBaoAn\\PhanBaoAn\\Models\\CartModel.cs",
+              "RelativeDocumentMoniker": "PhanBaoAn\\Models\\CartModel.cs",
+              "ToolTip": "D:\\asp\\PhanBaoAn\\PhanBaoAn\\Models\\CartModel.cs",
+              "RelativeToolTip": "PhanBaoAn\\Models\\CartModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-13T11:51:29.835Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\asp\\PhanBaoAn\\PhanBaoAn\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "PhanBaoAn\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\asp\\PhanBaoAn\\PhanBaoAn\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "PhanBaoAn\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAOcAAAAAAAAAAAAAAKwAAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-13T11:12:32.473Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "D:\\asp\\PhanBaoAn\\PhanBaoAn\\Views\\User\\Register.cshtml",
+              "RelativeDocumentMoniker": "PhanBaoAn\\Views\\User\\Register.cshtml",
+              "ToolTip": "D:\\asp\\PhanBaoAn\\PhanBaoAn\\Views\\User\\Register.cshtml",
+              "RelativeToolTip": "PhanBaoAn\\Views\\User\\Register.cshtml",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAAB8AAABkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-14T01:31:02.247Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Detail.cshtml",
+              "DocumentMoniker": "D:\\asp\\PhanBaoAn\\PhanBaoAn\\Views\\Product\\Detail.cshtml",
+              "RelativeDocumentMoniker": "PhanBaoAn\\Views\\Product\\Detail.cshtml",
+              "ToolTip": "D:\\asp\\PhanBaoAn\\PhanBaoAn\\Views\\Product\\Detail.cshtml",
+              "RelativeToolTip": "PhanBaoAn\\Views\\Product\\Detail.cshtml",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAAABEAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-14T02:17:50.544Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
