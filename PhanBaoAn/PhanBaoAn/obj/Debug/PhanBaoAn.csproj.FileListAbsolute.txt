@@ -81,3 +81,7 @@ D:\asp\PhanBaoAn\PhanBaoAn\bin\EntityFramework.dll
 D:\asp\PhanBaoAn\PhanBaoAn\bin\EntityFramework.SqlServer.dll
 D:\asp\PhanBaoAn\PhanBaoAn\bin\EntityFramework.xml
 D:\asp\PhanBaoAn\PhanBaoAn\bin\EntityFramework.SqlServer.xml
+D:\asp\PhanBaoAn\PhanBaoAn\bin\PagedList.dll
+D:\asp\PhanBaoAn\PhanBaoAn\bin\PagedList.Mvc.dll
+D:\asp\PhanBaoAn\PhanBaoAn\bin\PagedList.xml
+D:\asp\PhanBaoAn\PhanBaoAn\bin\PagedList.Mvc.xml

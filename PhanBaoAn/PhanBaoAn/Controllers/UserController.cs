@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Web;
@@ -22,10 +23,11 @@ namespace PhanBaoAn.Controllers
         public ActionResult Login(user objUser)
         {
             objUser.password = CreateMD5(objUser.password);
-            var FlagUser = obj.users.Where(n => n.email == objUser.email && n.password == objUser.password).ToList();
+            var FlagUser = obj.user.Where(n => n.email == objUser.email && n.password == objUser.password).ToList();
             if (FlagUser.Count > 0)
             {
                 Session["username"] = FlagUser.FirstOrDefault().lastname.ToString() + FlagUser.FirstOrDefault().firstname.ToString();
+                Session["idUser"] = FlagUser.FirstOrDefault().userId;
             }
             return RedirectToAction("Index", "Home");
         }
@@ -42,18 +44,35 @@ namespace PhanBaoAn.Controllers
         {
             try
             {
+                //if (objUser.ImageUpload != null)
+                //{
+                //    // Lấy tên file không có phần mở rộng
+                //    string fileName = Path.GetFileNameWithoutExtension(objUser.ImageUpload.FileName);
+                //    // Lấy phần mở rộng
+                //    string extension = Path.GetExtension(objUser.ImageUpload.FileName);
+                //    // Tạo tên file mới với thời gian hiện tại để tránh trùng tên
+                //    fileName = fileName + "_" + DateTime.Now.ToString("yyyyMMddhhmmss") + extension;
+                //    // Đặt đường dẫn lưu file
+                //    string path = Path.Combine(Server.MapPath("~/Content/images/items/"), fileName);
+                //    // Lưu file vào thư mục
+                //    objUser.ImageUpload.SaveAs(path);
+                //    // Lưu tên file vào cơ sở dữ liệu
+                //    objUser.image = fileName;
+                //}
+              
                 if (ModelState.IsValid)
                 {
                     // Mã hóa mật khẩu bằng MD5
                     objUser.password = CreateMD5(objUser.password);
 
-                    // Thêm người dùng vào cơ sở dữ liệu
-                    obj.users.Add(objUser);
-                    obj.SaveChanges();
-
-                    // Chuyển hướng đến trang đăng nhập sau khi đăng ký thành công
-                    return RedirectToAction("Login");
+                    
                 }
+                // Thêm người dùng vào cơ sở dữ liệu
+                obj.user.Add(objUser);
+                obj.SaveChanges();
+
+                // Chuyển hướng đến trang đăng nhập sau khi đăng ký thành công
+                return RedirectToAction("Login");
             }
             catch (Exception ex)
             {

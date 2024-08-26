@@ -18,8 +18,25 @@
     <Property Name="image" Type="nvarchar" MaxLength="50" />
     <Property Name="show" Type="bit" />
   </EntityType>
-  <!--Errors Found During Generation:
-warning 6002: The table/view 'ASP.dbo.product' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="order">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="nvarchar" MaxLength="100" />
+    <Property Name="userid" Type="int" />
+    <Property Name="status" Type="int" />
+    <Property Name="createdOnUtc" Type="datetime" />
+  </EntityType>
+  <EntityType Name="orderDetail">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="orderId" Type="int" />
+    <Property Name="productId" Type="int" />
+    <Property Name="quantity" Type="int" />
+  </EntityType>
   <EntityType Name="product">
     <Key>
       <PropertyRef Name="id" />
@@ -46,17 +63,9 @@ warning 6002: The table/view 'ASP.dbo.product' does not have a primary key defin
   <EntityContainer Name="ASPModelStoreContainer">
     <EntitySet Name="brand" EntityType="Self.brand" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="category" EntityType="Self.category" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="order" EntityType="Self.order" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="orderDetail" EntityType="Self.orderDetail" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="product" EntityType="Self.product" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="user" EntityType="Self.user" Schema="dbo" store:Type="Tables" />
-    <EntitySet Name="product" EntityType="Self.product" store:Type="Tables" store:Schema="dbo">
-      <DefiningQuery>SELECT 
-    [product].[id] AS [id], 
-    [product].[name] AS [name], 
-    [product].[price] AS [price], 
-    [product].[image] AS [image], 
-    [product].[categoryId] AS [categoryId], 
-    [product].[typeId] AS [typeId], 
-    [product].[brandId] AS [brandId]
-    FROM [dbo].[product] AS [product]</DefiningQuery>
-    </EntitySet>
   </EntityContainer>
 </Schema>

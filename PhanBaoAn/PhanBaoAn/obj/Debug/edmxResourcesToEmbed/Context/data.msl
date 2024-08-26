@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
   <EntityContainerMapping StorageEntityContainer="ASPModelStoreContainer" CdmEntityContainer="ASPEntities">
-    <EntitySetMapping Name="brands">
+    <EntitySetMapping Name="brand">
       <EntityTypeMapping TypeName="ASPModel.brand">
         <MappingFragment StoreEntitySet="brand">
           <ScalarProperty Name="id" ColumnName="id" />
@@ -11,7 +11,7 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="categories">
+    <EntitySetMapping Name="category">
       <EntityTypeMapping TypeName="ASPModel.category">
         <MappingFragment StoreEntitySet="category">
           <ScalarProperty Name="id" ColumnName="id" />
@@ -21,19 +21,28 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="users">
-      <EntityTypeMapping TypeName="ASPModel.user">
-        <MappingFragment StoreEntitySet="user">
-          <ScalarProperty Name="userId" ColumnName="userId" />
-          <ScalarProperty Name="firstname" ColumnName="firstname" />
-          <ScalarProperty Name="lastname" ColumnName="lastname" />
-          <ScalarProperty Name="password" ColumnName="password" />
-          <ScalarProperty Name="email" ColumnName="email" />
-          <ScalarProperty Name="isadmin" ColumnName="isadmin" />
+    <EntitySetMapping Name="order">
+      <EntityTypeMapping TypeName="ASPModel.order">
+        <MappingFragment StoreEntitySet="order">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="userid" ColumnName="userid" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="createdOnUtc" ColumnName="createdOnUtc" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="products">
+    <EntitySetMapping Name="orderDetail">
+      <EntityTypeMapping TypeName="ASPModel.orderDetail">
+        <MappingFragment StoreEntitySet="orderDetail">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="orderId" ColumnName="orderId" />
+          <ScalarProperty Name="productId" ColumnName="productId" />
+          <ScalarProperty Name="quantity" ColumnName="quantity" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="product">
       <EntityTypeMapping TypeName="ASPModel.product">
         <MappingFragment StoreEntitySet="product">
           <ScalarProperty Name="id" ColumnName="id" />
@@ -43,6 +52,18 @@
           <ScalarProperty Name="categoryId" ColumnName="categoryId" />
           <ScalarProperty Name="typeId" ColumnName="typeId" />
           <ScalarProperty Name="brandId" ColumnName="brandId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="user">
+      <EntityTypeMapping TypeName="ASPModel.user">
+        <MappingFragment StoreEntitySet="user">
+          <ScalarProperty Name="userId" ColumnName="userId" />
+          <ScalarProperty Name="firstname" ColumnName="firstname" />
+          <ScalarProperty Name="lastname" ColumnName="lastname" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="isadmin" ColumnName="isadmin" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

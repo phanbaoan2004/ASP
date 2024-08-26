@@ -11,7 +11,8 @@ namespace PhanBaoAn.Context
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.Web;
+
     public partial class product
     {
         public int id { get; set; }
@@ -21,5 +22,7 @@ namespace PhanBaoAn.Context
         public Nullable<int> categoryId { get; set; }
         public Nullable<int> typeId { get; set; }
         public Nullable<int> brandId { get; set; }
+
+        public HttpPostedFileBase ImageUpload{get;set; }
     }
 }

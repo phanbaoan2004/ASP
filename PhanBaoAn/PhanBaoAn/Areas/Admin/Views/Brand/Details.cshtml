@@ -1,0 +1,53 @@
+﻿@model PhanBaoAn.Context.brand
+
+@{
+    ViewBag.Title = "Brand Details";
+    Layout = "~/Areas/admin/Views/Shared/AdminLayout.cshtml";
+}
+
+<div class="container mt-4">
+    <div class="d-flex justify-content-between align-items-center mb-3">
+        <h2 class="text-primary">@ViewBag.Title</h2>
+    </div>
+
+    <div class="card">
+        <div class="card-header bg-primary text-white">
+            <h4 class="mb-0">@Model.name</h4>
+        </div>
+        <div class="card-body">
+            <dl class="row">
+                <dt class="col-sm-3">
+                    @Html.DisplayNameFor(model => model.name)
+                </dt>
+                <dd class="col-sm-9">
+                    @Html.DisplayFor(model => model.name)
+                </dd>
+
+                <dt class="col-sm-3">
+                    @Html.DisplayNameFor(model => model.image)
+                </dt>
+                <dd class="col-sm-9">
+                    @if (string.IsNullOrEmpty(Model.image))
+                    {
+                        <img src="~/Content/images/default-placeholder.png" alt="No Image" class="img-fluid" style="max-width: 300px;" />
+                    }
+                    else
+                    {
+                        <img src="@Url.Content("~/Content/images/items/" + Model.image)" alt="@Model.name" class="img-fluid" style="max-width: 300px;" />
+                    }
+                </dd>
+
+                <dt class="col-sm-3">
+                    @Html.DisplayNameFor(model => model.show)
+                </dt>
+                <dd class="col-sm-9">
+                    @Html.DisplayFor(model => model.show)
+                </dd>
+            </dl>
+        </div>
+        <div class="card-footer text-right">
+            @Html.ActionLink("Edit", "Edit", new { id = Model.id }, new { @class = "btn btn-warning mr-2" })
+            @Html.ActionLink("Back to List", "Index", null, new { @class = "btn btn-secondary" })
+        </div>
+    </div>
+</div>

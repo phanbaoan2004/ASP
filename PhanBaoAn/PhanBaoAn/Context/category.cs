@@ -11,12 +11,14 @@ namespace PhanBaoAn.Context
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.Web;
+
     public partial class category
     {
         public int id { get; set; }
         public string name { get; set; }
         public string image { get; set; }
         public Nullable<bool> show { get; set; }
+        public HttpPostedFileBase ImageUpload { get; set; }
     }
 }

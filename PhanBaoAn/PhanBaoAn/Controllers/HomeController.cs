@@ -16,26 +16,14 @@ namespace PhanBaoAn.Controllers
         public ActionResult Index()
         {
             HomeModel objHomemodel = new HomeModel();
-            objHomemodel.ListCategory = objASPEntities.categories.ToList();
+            objHomemodel.ListCategory = objASPEntities.category.ToList();
 
-            objHomemodel.ListProduct = objASPEntities.products.ToList();
+            objHomemodel.ListProduct = objASPEntities.product.ToList();
 
             return View(objHomemodel);
         }
     
 
-        public ActionResult About()
-        {
-            ViewBag.Message = "Your application description page.";
-
-            return View();
-        }
-
-        public ActionResult Contact()
-        {
-            ViewBag.Message = "Your contact page.";
-
-            return View();
-        }
+       
     }
 }

@@ -1,0 +1,54 @@
+﻿@model PhanBaoAn.Context.brand
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Areas/admin/Views/Shared/AdminLayout.cshtml";
+}
+
+<div class="container mt-4">
+    <h2 class="text-center text-danger">@ViewBag.Title Brand</h2>
+
+    <div class="alert alert-warning mt-4" role="alert">
+        <h4 class="alert-heading">Are you sure you want to delete this brand?</h4>
+        <p>This action cannot be undone.</p>
+    </div>
+
+    <div class="card mt-4">
+        <div class="card-header">
+            <h4 class="card-title">Brand Details</h4>
+        </div>
+        <div class="card-body">
+            <dl class="row">
+                <dt class="col-sm-3">
+                    @Html.DisplayNameFor(model => model.name)
+                </dt>
+                <dd class="col-sm-9">
+                    @Html.DisplayFor(model => model.name)
+                </dd>
+
+                <dt class="col-sm-3">
+                    @Html.DisplayNameFor(model => model.image)
+                </dt>
+                <dd class="col-sm-9">
+                    <img src="@Model.image" alt="@Model.name" class="img-fluid" style="max-width: 200px;" />
+                </dd>
+
+                <dt class="col-sm-3">
+                    @Html.DisplayNameFor(model => model.show)
+                </dt>
+                <dd class="col-sm-9">
+                    @Html.DisplayFor(model => model.show)
+                </dd>
+            </dl>
+        </div>
+        <div class="card-footer text-right">
+            @using (Html.BeginForm())
+            {
+                @Html.AntiForgeryToken()
+
+                <input type="submit" value="Delete" class="btn btn-danger" />
+                @Html.ActionLink("Cancel", "Index", null, new { @class = "btn btn-secondary ml-2" })
+            }
+        </div>
+    </div>
+</div>

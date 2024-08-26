@@ -1,0 +1,27 @@
+﻿@{
+    ViewBag.Title = "Payment";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header text-center">
+                    <h2>Payment successful. </h2>
+                </div>
+                <div class="card-body">
+                    <p class="lead text-center">
+                        Please proceed with your payment details below.
+                    </p>
+                    <!-- Add your payment form or other content here -->
+                    <!-- Continue Shopping Button -->
+                    <div class="text-center mt-4">
+                        @Html.ActionLink(" Continue Shopping", "Index", "Home", new { area = "" }, new { @class = " btn btn-primary nav-link" })
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

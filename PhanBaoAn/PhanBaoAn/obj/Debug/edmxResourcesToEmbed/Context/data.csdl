@@ -18,16 +18,24 @@
     <Property Name="image" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
     <Property Name="show" Type="Boolean" />
   </EntityType>
-  <EntityType Name="user">
+  <EntityType Name="order">
     <Key>
-      <PropertyRef Name="userId" />
+      <PropertyRef Name="id" />
     </Key>
-    <Property Name="userId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="firstname" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-    <Property Name="lastname" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-    <Property Name="password" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-    <Property Name="email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-    <Property Name="isadmin" Type="Int32" />
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="userid" Type="Int32" />
+    <Property Name="status" Type="Int32" />
+    <Property Name="createdOnUtc" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="orderDetail">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="orderId" Type="Int32" />
+    <Property Name="productId" Type="Int32" />
+    <Property Name="quantity" Type="Int32" />
   </EntityType>
   <EntityType Name="product">
     <Key>
@@ -41,10 +49,23 @@
     <Property Name="typeId" Type="Int32" />
     <Property Name="brandId" Type="Int32" />
   </EntityType>
+  <EntityType Name="user">
+    <Key>
+      <PropertyRef Name="userId" />
+    </Key>
+    <Property Name="userId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="firstname" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="lastname" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="password" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="isadmin" Type="Int32" />
+  </EntityType>
   <EntityContainer Name="ASPEntities" annotation:LazyLoadingEnabled="true">
-    <EntitySet Name="brands" EntityType="Self.brand" />
-    <EntitySet Name="categories" EntityType="Self.category" />
-    <EntitySet Name="users" EntityType="Self.user" />
-    <EntitySet Name="products" EntityType="Self.product" />
+    <EntitySet Name="brand" EntityType="Self.brand" />
+    <EntitySet Name="category" EntityType="Self.category" />
+    <EntitySet Name="order" EntityType="Self.order" />
+    <EntitySet Name="orderDetail" EntityType="Self.orderDetail" />
+    <EntitySet Name="product" EntityType="Self.product" />
+    <EntitySet Name="user" EntityType="Self.user" />
   </EntityContainer>
 </Schema>

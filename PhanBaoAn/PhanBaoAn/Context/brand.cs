@@ -11,6 +11,7 @@ namespace PhanBaoAn.Context
 {
     using System;
     using System.Collections.Generic;
+    using System.Web;
     
     public partial class brand
     {
@@ -18,5 +19,6 @@ namespace PhanBaoAn.Context
         public string name { get; set; }
         public string image { get; set; }
         public Nullable<bool> show { get; set; }
+        public HttpPostedFileBase ImageUpload { get; set; }
     }
 }

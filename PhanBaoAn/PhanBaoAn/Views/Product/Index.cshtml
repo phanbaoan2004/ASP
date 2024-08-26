@@ -1,0 +1,101 @@
+﻿@model PagedList.IPagedList<PhanBaoAn.Context.product>
+@using PagedList.Mvc;
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<section class="section-content padding-y bg-light">
+    <div class="container">
+        <div class="row">
+            @foreach (var item in Model)
+            {
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="card card-category shadow-sm">
+                        <div class="img-wrap" style="background: #fff; height: 200px; display: flex; align-items: center; justify-content: center;">
+                            <img src="~/Content/images/items/@item.image" alt="@item.name" class="img-fluid" style="max-height: 100%; max-width: 100%;">
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title">
+                                @Html.ActionLink(@item.name, "Detail", "Product", new { @id = item.id }, new { @class = "text-dark text-decoration-none" })
+                            </h5>
+                        </div>
+                        <div class="card-body text-center">
+                            <h6 class="card-title">
+                                <p>@item.price</p>
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div> <!-- row.// -->
+        <!-- Phân trang -->
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <div class="pagination-wrapper">
+                    @Html.PagedListPager(Model, page => Url.Action("Index", new { page = page }), new PagedListRenderOptions
+                      {
+                          DisplayLinkToFirstPage = PagedListDisplayMode.Always,
+                          DisplayLinkToLastPage = PagedListDisplayMode.Always,
+                          DisplayLinkToPreviousPage = PagedListDisplayMode.Always,
+                          DisplayLinkToNextPage = PagedListDisplayMode.Always,
+                          DisplayLinkToIndividualPages = true,
+                          MaximumPageNumbersToDisplay = 5,
+                          UlElementClasses = new[] { "pagination", "justify-content-center", "my-custom-pagination" },
+                          LiElementClasses = new[] { "page-item" },
+                          // Không dùng PageClasses và tự thêm class vào HTML trực tiếp
+                      })
+
+                </div>
+            </div>
+        </div>
+    </div> <!-- container .//  -->
+</section>
+
+<style>
+    .pagination-wrapper .pagination {
+        border: 1px solid #dee2e6; /* Màu và kích thước của khung phân trang */
+        border-radius: 5px; /* Bo góc cho khung phân trang */
+        padding: 0.5rem; /* Khoảng cách bên trong khung phân trang */
+        display: inline-flex; /* Hiển thị phân trang theo dạng dòng */
+    }
+
+        /* Khung cho từng nút phân trang */
+        .pagination-wrapper .pagination .page-item {
+            margin: 0; /* Xóa khoảng cách bên ngoài các mục phân trang */
+        }
+
+            .pagination-wrapper .pagination .page-item a {
+                color: #007bff; /* Màu chữ của nút phân trang */
+                border: 1px solid #dee2e6; /* Khung của nút phân trang */
+                border-radius: 5px; /* Bo góc cho nút phân trang */
+                margin: 0 2px; /* Khoảng cách giữa các nút phân trang */
+                padding: 8px 12px; /* Kích thước của nút phân trang */
+                text-decoration: none; /* Xóa gạch chân của liên kết */
+                display: inline-block; /* Hiển thị nút phân trang như khối nội tuyến */
+            }
+
+            /* Khung cho nút phân trang đang được chọn */
+            .pagination-wrapper .pagination .page-item.active a {
+                background-color: #007bff; /* Màu nền của nút phân trang đang được chọn */
+                border-color: #007bff;
+                color: #fff; /* Màu chữ của nút phân trang đang được chọn */
+            }
+
+            /* Khung cho nút phân trang khi di chuột lên */
+            .pagination-wrapper .pagination .page-item a:hover {
+                background-color: #0056b3; /* Màu nền khi di chuột lên nút phân trang */
+                border-color: #0056b3;
+                color: #fff; /* Màu chữ khi di chuột lên nút phân trang */
+            }
+
+        /* Biểu tượng cho trang trước và sau */
+        .pagination-wrapper .pagination .previous-page a::before {
+            content: "< "; /* Biểu tượng trang trước */
+        }
+
+        .pagination-wrapper .pagination .next-page a::after {
+            content: " >"; /* Biểu tượng trang sau */
+        }
+
+</style>

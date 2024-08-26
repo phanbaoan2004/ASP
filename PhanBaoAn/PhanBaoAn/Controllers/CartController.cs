@@ -21,7 +21,7 @@ namespace PhanBaoAn.Controllers
             if (Session["cart"] == null)
             {
                 List<CartModel> cart = new List<CartModel>();
-                cart.Add(new CartModel { Product = objWebsiteBanHangEntities.products.Find(id), Quantity = quantity });
+                cart.Add(new CartModel { Product = objWebsiteBanHangEntities.product.Find(id), Quantity = quantity });
                 Session["cart"] = cart;
                 Session["count"] = 1;
             }
@@ -38,7 +38,7 @@ namespace PhanBaoAn.Controllers
                 else
                 {
                     //nếu không tồn tại thì thêm sản phẩm vào giỏ hàng
-                    cart.Add(new CartModel { Product = objWebsiteBanHangEntities.products.Find(id), Quantity = quantity });
+                    cart.Add(new CartModel { Product = objWebsiteBanHangEntities.product.Find(id), Quantity = quantity });
                     //Tính lại số sản phẩm trong giỏ hàng
                     Session["count"] = Convert.ToInt32(Session["count"]) + 1;
                 }

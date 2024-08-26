@@ -13,13 +13,13 @@ namespace PhanBaoAn.Controllers
         ASPEntities objASPEntities = new ASPEntities();
         public ActionResult Index()
         {
-            var lstCategory = objASPEntities.categories.ToList();
+            var lstCategory = objASPEntities.category.ToList();
             return View(lstCategory);
         }
 
         public ActionResult ProductCategory(int id)
         {
-            var lstproduct= objASPEntities.products.Where(n=>n.categoryId==id).ToList();
+            var lstproduct= objASPEntities.product.Where(n=>n.categoryId==id).ToList();
             return View(lstproduct);
         }
     }

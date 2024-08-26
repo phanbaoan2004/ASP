@@ -25,9 +25,11 @@ namespace PhanBaoAn.Context
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<brand> brands { get; set; }
-        public virtual DbSet<category> categories { get; set; }
-        public virtual DbSet<user> users { get; set; }
-        public virtual DbSet<product> products { get; set; }
+        public virtual DbSet<brand> brand { get; set; }
+        public virtual DbSet<category> category { get; set; }
+        public virtual DbSet<order> order { get; set; }
+        public virtual DbSet<orderDetail> orderDetail { get; set; }
+        public virtual DbSet<product> product { get; set; }
+        public virtual DbSet<user> user { get; set; }
     }
 }

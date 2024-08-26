@@ -69,7 +69,7 @@
                         </a> <!-- brand-wrap.// -->
                     </div>
                     <div class="col-xl-6 col-lg-5 col-md-6">
-                        <form action="#" class="search-header">
+                        <form action="@Url.Action("Index", "Product")" method="get" class="search-header">
                             <div class="input-group w-100">
                                 <select class="custom-select border-right" name="category_name">
                                     <option value="">All type</option>
@@ -77,15 +77,15 @@
                                     <option value="comments">Only best</option>
                                     <option value="content">Latest</option>
                                 </select>
-                                <input type="text" class="form-control" placeholder="Search">
+                                <input type="text" name="searchTerm" class="form-control" placeholder="Search">
 
                                 <div class="input-group-append">
                                     <button class="btn btn-primary" type="submit">
-                                        <i class="fa fa-search"></i>Search
+                                        <i class="fa fa-search"></i> Search
                                     </button>
                                 </div>
                             </div>
-                        </form> <!-- search-wrap .end// -->
+                        </form>
                     </div> <!-- col.// -->
                     <div class="col-xl-4 col-lg-4 col-md-6">
                         <div class="widgets-wrap float-md-right">
@@ -105,6 +105,8 @@
                                         else
                                         {
                                             <a class="nav-link "> @Session["username"]</a>
+                                            @Html.ActionLink("Admin", "Index", "Home", new { area = "admin" }, new { @class = "nav-link" })
+
                                             @Html.ActionLink("Logout", "Logout", "User", new { area = "" }, new { @class = "nav-link" })
                                         }
 
